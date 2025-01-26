@@ -7,7 +7,7 @@ import DepartmentDashboard from '../Components/department/DepartmentDashboard'; 
 import Header from '../Components/shared/Header'; // Shared Header
 import Footer from '../Components/shared/Footer'; // Shared Footer
 import RegistrationPage from '../Components/receptionist/RegistrationPage';
-import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';';';
+import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction';';';
 const App = () => {
   return (
     <Router>

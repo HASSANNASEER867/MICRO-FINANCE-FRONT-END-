@@ -1,11 +1,12 @@
-// src/components/department/DepartmentStaffInteraction.jsx
 
 import React, { useState } from "react";
 import { Form, Input, Button, Table, notification } from "antd";
 import { useNavigate } from "react-router-dom";
+import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction';
+
 
 const DepartmentStaffInteraction = () => {
-  const [token, setToken] = useState(""); // To store token input by the staff
+  const [token, setToken] = useState(""); // To git push token input by the staff
   const [beneficiaryData, setBeneficiaryData] = useState(null); // To store beneficiary data fetched by the token
   const [remarks, setRemarks] = useState(""); // To store the remarks entered by the staff
   const navigate = useNavigate(); // To navigate to other pages

@@ -43,9 +43,9 @@ const AdminDashboard = () => {
             <h3>Total Visitors</h3>
             <ResponsiveContainer width="100%" height={250}>
               <PieChart>
-                <Pie data={totalVisitorsData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} fill="#8884d8" label>
+                <Pie data={totalVisitorsData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} fill="#000000" label>
                   {totalVisitorsData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={index % 2 === 0 ? "#00C49F" : "#FF8042"} />
+                    <Cell key={`cell-${index}`} fill={index % 2 === 0 ? "#000000" : "#0000FF"} />
                   ))}
                 </Pie>
               </PieChart>
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="count" fill="#82ca9d" />
+                <Bar dataKey="count" fill="#000000" />
               </BarChart>
             </ResponsiveContainer>
           </Card>
@@ -79,7 +79,7 @@ const AdminDashboard = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="count" stroke="#8884d8" />
+                <Line type="monotone" dataKey="count" stroke="#000000" />
               </LineChart>
             </ResponsiveContainer>
           </Card>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <Layout.Header>
-      <Menu theme="dark" mode="horizontal">
+      <Menu theme="light" mode="horizontal">
         <Menu.Item key="1">
           <Link to="/admin">Admin</Link>
         </Menu.Item>
